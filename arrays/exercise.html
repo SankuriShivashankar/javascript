@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercise</title>
+</head>
+<body>
+  <script>
+
+
+    // let arr = [5,6];
+    // console.log(arr);
+    // arr.push(7);
+    // console.log(arr);
+    // arr.unshift(4);
+    // console.log(arr);
+
+    // function getElement(arr,position){
+    //   return arr[position - 1];
+    // }
+
+    // let arr = [1,2,3,4,5,6,7,8];
+    // console.log (getElement(arr,6));  
+
+    // function arrcopy(arr){
+    //   return arr.slice(1,arr.length);
+
+    // }
+
+    // let arr = [4,5,6,7];
+    // let arr2 = console.log(arr.slice(arrcopy));
+    // arr2[0] = 5;
+    // console.log(arr);
+    // console.log(arr2);
+
+    function isPrime(num){
+      for(let i=2;i<num;i++){
+        if(num%i === 0){
+          return false;
+        }
+      }
+      return true;
+
+      
+    }
+
+    let num = 2;
+    let i = 0;
+    while(true){
+      if(isPrime(num)){
+        console.log(num);
+        i++;
+      }
+      num++;
+    }
+    console.log(isPrime(5));
+    console.log(isPrime(17));
+    console.log(isPrime(3));
+    console.log(isPrime(7));
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+</head>
+<body>
+
+
+  <script>
+
+      
+
+    let product = {
+      size:'s',
+      name : 'jeans',
+      fit : 'slim fit',
+      'delivery-time':'same day delivery',
+    };
+
+    // let copyProduct = product;
+    // console.log(product);
+    // copyProduct.size = 'M';
+    // console.log(product);
+    // copyProduct.fit = 'Regular Fit';
+    // console.log(product);
+
+    console.log(product['delivery-time']);
+
+    let obj = {
+      message:'good job',
+      status : 'complete',
+    };
+    console.log(obj);
+    let {message,status} = obj;
+    console.log(message);
+    console.log(status);
+
+
+
+    function isIdentiacal(product1,product2){
+
+      if(typeof product1 !== 'object' || typeof product2 !== 'object'){
+        console.warn('parameter passed was not an object');
+        return false;
+      }
+      if(product1 == product2){
+        return true;
+      }
+      if(product1.name === product2.name && product1.size === product2.size && product1.fit === product2.fit){
+        return true;
+      }
+      else{
+        return false;
+      }
+      
+    }
+    
+    let product2 = {
+      size:'M',
+      name : 'jeans',
+      fit : 'slim fit',
+      'delivery-time':'same day delivery',
+    };
+    let product3 = {
+      size:'s',
+      name : 'jeans',
+      fit : 'slim fit',
+      'delivery-time':'same day delivery',
+    };
+
+    console.log(isIdentiacal(product,product2));
+    console.log(isIdentiacal(product3,product));
+
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = Math.random();
+        let first,second,third;
+        if (number > 0.33){
+            first = "you";  
+        }
+        else if(number < 0.66 && number >= 0.33){
+            first = "tube";
+        }
+        else{
+            first = "flip";
+        }
+        number = Math.random();
+        if (number > 0.33){
+            second = "kart";  
+        }
+        else if(number < 0.66 && number >= 0.33){
+            second = "roman";
+        }
+        else{
+            second = "five";
+        }
+        number = Math.random();
+        if (number > 0.33){
+            third = "black";  
+        }
+        else if(number < 0.66 && number >= 0.33){
+            third = "rines";
+        }
+        else{
+            third = "star";
+        }
+        console.log(`${first}${second}${third}`);
+        
+    </script>
+</body>
+</html>

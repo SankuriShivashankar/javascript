@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // let product = {
+    //   company : 'mango',
+    //   price : 345,
+    //   item_name: 'T-Shirt',
+    // };
+    // console.log(product);
+    // console.log(product.company);
+    // console.log(product.item_name);
+    // console.log(product.price);
+    // product.company = 'Banana';
+    // console.log(product);
+
+
+    // let product = {
+    //   company : 'mango',
+    //   price : 345,
+    //   item_name: 'T-Shirt',
+    //   displayPrice: function(){
+    //     console.log(`price of the product is ${product.price}`)
+    //   }
+    // };
+    // product.displayPrice();
+    // console.log('this is shiva'.length);
+    // console.log('this is shiva'.toUpperCase());
+    // console.log('this is shiva'.replace('shiva','is shiva shankar'));  
+
+
+
+    // let x = {num:5};
+    // let y = x;
+    // console.log(`x=${x.num},y=${y.num}`);
+    // x.num = 8;
+    // console.log(`x=${x.num},y=${y.num}`);
+
+    // let p = {pop:'iujh'};
+    // let q = {pop:'iujh'};
+    // console.log(p==q);
+
+    //De-structuring
+
+    // let product = {
+    //   company: 'mango',
+    //   price: 345,
+    //   item_name: 'T-Shirt',
+    // };
+
+    // let {company,price} = product;
+    // console.log(company);
+    // console.log(price);
+    
+    //property shorthand
+
+    // price: 345;
+    // let product = {
+    //   company: 'mango',
+    //   item_name: 'T-Shirt',
+    //   price:price,
+    // };
+    // let product1={
+    //   company:'mango',
+    //   item_name:'cotton striped t-shirt',
+    //   price
+    // };
+
+    //method shorthand
+
+    let product = {
+      company: 'mango',
+      price: 345,
+      item_name: 'T-Shirt',
+      displayPrice:function(){
+        return `$${this.price.toFixed(2)}`;
+      }
+    };
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

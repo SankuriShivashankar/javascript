@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+#main-heading {
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  align-items: center;
+}
+
+#todo-input,
+#todo-date {
+  font-size: 15px;
+  padding: 10px 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.btn-todo {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-todo:hover {
+  background-color: #45a049;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.todo-container > div {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 80px;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.todo-container span {
+  font-size: 16px;
+  color: #333;
+}

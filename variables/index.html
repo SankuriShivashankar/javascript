@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+<h1 id="heading"></h1>
+<h1 id="heading2"></h1>
+<button onclick="
+  let randomChoice = Math.random() * 3;
+  let computerChoice;
+  if (randomChoice > 0 && randomChoice <= 1) {
+    computerChoice = 'bat';
+  } else if (randomChoice > 1 && randomChoice <= 2) {
+    computerChoice = 'ball';
+  } else {
+    computerChoice = 'stumps';
+  }
+  document.querySelector('#heading').innerHTML = `You chose to bat and computer chose ${computerChoice}`;
+">Bat</button>
+<button>Ball</button>
+
+
+
+  <script>
+    // let WelcomeMessage = 'your final myntra bag amount is ₹';
+    // let bagPrice=(15599 - (10 / 100 * 15599)) - 272;
+    // let message='this is the final Jeans Price';
+    // let jeansprice=(2499 - (41 / 100 * 2499)) - 29 ;
+    // let jeansSummary=`${message}${jeansprice}`;
+    // console.log(jeansSummary)
+    // let finalAmount = (bagPrice +jeansprice + 25 + 20) * 118 / 100;
+    // let bagSummary = `${WelcomeMessage}${finalAmount}`;
+    // console.log(bagSummary);
+
+
+  </script>
+</body>
+
+</html>

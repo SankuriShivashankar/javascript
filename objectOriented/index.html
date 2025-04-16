@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // let obj = {
+    //   a:1,
+    //   b:"shiva",
+    // }
+
+    // class animal{
+    //   constructor(name){
+    //     console.log("objects is created");
+    //   }
+    //   eats(){
+    //     console.log("hii");
+    //   }
+    //   jumps(){
+    //     console.log("hii  hh");
+    //   }
+    // }
+
+    // class lion extends animal{
+    //   constructor(name){
+    //     super(name);
+    //     console.log("this is lion");
+    //   }
+    // }
+
+    // let a = new animal("buffalo");
+    // console.log(a);
+    // let l = new lion("simbha");
+    // console.log(l);
+
+    class User{
+      constructor(name){
+        this.name = name;
+      }
+
+      get name(){
+        return this._name;
+      }
+
+      set name(value){
+        if(value.length < 4){
+          console.log("name is too short");
+          return;
+        }
+        this._name = value;
+      }
+    }
+
+    let user = new User("shiva");
+    console.log(user.name);
+    user.name = "shiva";
+    console.log(user.name);
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

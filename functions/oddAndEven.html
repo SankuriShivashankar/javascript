@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oddAndEven</title>
+</head>
+
+<body>
+
+  <script>
+
+
+    function evenOrodd(number) {
+      if (number % 2 == 0){
+        return `even`;
+      }
+      else {
+      return `odd`;
+      }
+    }
+
+    console.log(evenOrodd(2));
+
+    // let number = 2;
+    // if(number%2 == 0){
+    //   console.log( `Even`);
+    // }else{
+    //   console.log( `Odd`) ;
+    // }
+
+
+
+    function larger(num1,num2){
+      
+      if(num1>num2){
+        console.log('num1 is greater');
+      }
+      else if(num2>num1){
+        console.log('num2 is greater than num1');
+      }
+      else{
+        console.log('both the numbers are equal');
+      }
+    }
+    let result = console.log(larger(5,5));
+
+
+    function  toFahrenheit(celsiusValue){
+      return 9/5*celsiusValue +32;
+    }
+
+    console.log(toFahrenheit(38));
+
+
+
+  </script>
+</body>
+
+</html>
