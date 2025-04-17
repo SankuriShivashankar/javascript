@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage Manager</title>
+</head>
+<body>
+  <script>
+
+    let product = {
+      name:'shiva shankar',
+      rollno:'98765',
+      hobby:'cricket',
+      place:'hyderabad',
+    };
+    localStorage.setItem('product2', JSON.stringify(product));
+    console.log(typeof product);
+    let product2 = JSON.stringify(product);
+    console.log(typeof product2);
+    let product3 = JSON.parse(localStorage.getItem('product2'));
+    console.log(product3);
+
+  </script>
+</body>
+</html>

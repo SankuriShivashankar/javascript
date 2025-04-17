@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>password validator</title>
+</head>
+<body>
+  <h1>password validator: <span id="check"></span></h1>
+
+  <script>
+    function isValidPassword(password) {
+      let minLength = 8;
+
+      const upperCase = /[A-Z]/.test(password);
+      const lowerCase = /[a-z]/.test(password);
+      const charater = /[~!@#$%^*&()<>{}]/.test(password);
+      const number = /[0-9]/.test(password);
+
+      if (password.length < minLength) {
+        return "❌ Password must contain at least 8 characters.";
+      }
+      if (!lowerCase) {
+        return "❌ Password must contain a lowercase letter.";
+      }
+      if (!number) {
+        return "❌ Password must contain at least one number.";
+      }
+      if (!charater) {
+        return "❌ Password must contain at least one special character.";
+      }
+      if (!upperCase) {
+        return "❌ Password must contain at least one uppercase letter.";
+      }
+
+      return "✅ Valid Password";
+    }
+
+    // Call the function and display the result
+    const result = isValidPassword("Shiva@123");
+    document.getElementById('check').innerHTML = result;
+  </script>
+</body>
+</html>

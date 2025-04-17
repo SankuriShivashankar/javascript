@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Async Array Mapping</title>
+</head>
+<body>
+  <script>
+    async function asyncArrayMapping(numbers) {
+      return numbers.map(num => 
+        new Promise(resolve => 
+          setTimeout(() => resolve(num * 2), 500)
+        )
+      );
+    }
+
+    // Example usage:
+    const numbers = [1, 2, 3, 4];
+    asyncArrayMapping(numbers).then(promises => 
+      Promise.all(promises).then(results => console.log(results))
+    );
+     
+    
+
+
+  </script>
+</body>
+</html>

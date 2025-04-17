@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vowel Counter</title>
+</head>
+<body>
+  <script>
+    // Count vowels using ASCII values without creating a function
+    // const inputString = "shiva";
+    // let count = 0;
+    // for(let i=0;i<inputString.length;i++){
+
+    //   if(inputString[i]=='a' || inputString[i]=='e' ||inputString[i]=='i' ||inputString[i]=='o' ||inputString[i]=='u' ){
+    //     count++;
+    //     console.log(inputString[i]);
+    //   }
+    // }
+    // console.log(`Number of vowels in "${inputString}":`, count);
+
+
+    function VowelCount(string){
+
+      let count = 0;
+
+      for(let i=0;i<string.length;i++){
+        let charcode = string.charCodeAt(i);
+        if(charcode>=65 && charcode<=90){
+          charcode +=32;
+
+        }
+        if(charcode==97 || charcode==101 || charcode==105 || charcode==111 || charcode==117){
+          count++;
+          console.log(string[i]);
+        }
+      }
+
+      return count;
+    }
+    let result = "Shiva";
+    console.log(`Number of vowels in "${result}":`, VowelCount(result));
+
+
+    // function check(string){
+    //   // const string ='a';
+    //   let charcode = string.charCodeAt(0);
+    //   return charcode; 
+    // }
+    // console.log(check("a"));
+    // console.log(check("e"));
+    // console.log(check("i"));
+    // console.log(check("o"));
+    // console.log(check("u"));
+
+
+  </script>
+  
+</body>
+</html>
