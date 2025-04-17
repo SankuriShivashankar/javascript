@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+  max-width: 100%;
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.image{
+  z-index: 10;
+
+}
+
+input{
+  padding: 0 16px;
+  border-radius: 2px 0 0 2px;
+  border: 0;
+  outline: 0 none;
+  font-size: 14px;
+  height: 30px;
+  width: 350px;
+}
+
+.login > button{
+  width: 120px;
+  height: 30px;
+
+}
+
+.seller, .more, .cart{
+  color: white;
+  font-weight: 500;
+}
+
+.cart{
+  display: flex;
+  
+}
